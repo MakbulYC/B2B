@@ -1,0 +1,20 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://www.juniper.es/webservice/2007/">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <HotelModify>
+      <HotelModifyRQ Version="1.1" Language="en">
+        <Login Email="user@mydomain.com" Password="pass"/>
+        <ReservationLocator ItemId="123456">XXXXXX</ReservationLocator>
+        <Paxes>
+          <Pax IdPax="1">
+            <Name>Holder test name</Name>
+            <Surname>Holder test surname</Surname>
+          </Pax>
+        </Paxes>
+        <Holder>
+          <RelPax IdPax="1"/>
+        </Holder>
+      </HotelModifyRQ>
+    </HotelModify>
+  </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,32 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://www.juniper.es/webservice/2007/">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <HotelAvailCalendar>
+      <HotelAvailCalendarRQ Version="1.1" Language="en">
+        <Login Email="user@mydomain.com" Password="pass"/>
+        <Paxes>
+          <Pax IdPax="1"/>
+          <Pax IdPax="2"/>
+        </Paxes>
+        <HotelCalendarRequest>
+          <SearchSegmentsHotels>
+            <SearchSegmentHotels Start="2019-11-02" End="2019-11-03"/>
+            <Nights>2</Nights>
+            <HotelCodes>
+              <HotelCode>JP046300</HotelCode>
+            </HotelCodes>
+            <CountryOfResidence>ES</CountryOfResidence>
+          </SearchSegmentsHotels>
+          <RelPaxesDist>
+            <RelPaxDist>
+              <RelPaxes>
+                <RelPax IdPax="1"/>
+                <RelPax IdPax="2"/>
+              </RelPaxes>
+            </RelPaxDist>
+          </RelPaxesDist>
+        </HotelCalendarRequest>
+      </HotelAvailCalendarRQ>
+    </HotelAvailCalendar>
+  </soapenv:Body>
+</soapenv:Envelope>

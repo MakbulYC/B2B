@@ -1,0 +1,10 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://www.juniper.es/webservice/2007/">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <HotelPortfolio>
+      <HotelPortfolioRQ Version="1.1" Language="en" RecordsPerPage="500" Token="CrX+Y3DpWKIrv33F9YLEYw==">
+        <Login Email="user@mydomain.com" Password="pass"/>
+      </HotelPortfolioRQ>
+    </HotelPortfolio>
+  </soapenv:Body>
+</soapenv:Envelope>

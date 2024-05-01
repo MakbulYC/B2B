@@ -1,0 +1,44 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://www.juniper.es/webservice/2007/">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <HotelFutureRates>
+      <HotelFutureRatesRQ Version="1.1" Language="en">
+        <Login Email="user@mydomain.com" Password="pass"/>
+        <Paxes>
+          <Pax IdPax="1">
+            <Age>45</Age>
+          </Pax>
+          <Pax IdPax="2">
+            <Age>3</Age>
+          </Pax>
+          <Pax IdPax="3">
+            <Age>54</Age>
+          </Pax>
+        </Paxes>
+        <HotelFutureRatesRequest>
+          <SearchSegmentsHotelFutureRates>
+            <SearchSegmentHotels Start="2019-11-02" End="2019-11-03"/>
+            <Nights>7</Nights>
+            <CountryOfResidence>ES</CountryOfResidence>
+            <HotelCodes>
+              <HotelCode>JP046300</HotelCode>
+            </HotelCodes>
+          </SearchSegmentsHotelFutureRates>
+          <RelPaxesDist>
+            <RelPaxDist>
+              <RelPaxes>
+                <RelPax IdPax="1"/>
+                <RelPax IdPax="2"/>
+              </RelPaxes>
+            </RelPaxDist>
+            <RelPaxDist>
+              <RelPaxes>
+                <RelPax IdPax="3"/>
+              </RelPaxes>
+            </RelPaxDist>
+          </RelPaxesDist>
+        </HotelFutureRatesRequest>
+      </HotelFutureRatesRQ>
+    </HotelFutureRates>
+  </soapenv:Body>
+</soapenv:Envelope>

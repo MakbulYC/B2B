@@ -1,0 +1,19 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://www.juniper.es/webservice/2007/">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <HotelCheckAvail>
+      <HotelCheckAvailRQ Version="1.1" Language="en">
+        <Login Email="user@mydomain.com" Password="pass"/>
+        <HotelCheckAvailRequest>
+          <HotelOption RatePlanCode="ya79dM4dS6R6EywV4XhfEjz0JYHFoZhoRcbbmqH3aaH3tVth8bhV1Vf1SoRyXBzhB5Khvb878rII4rPLkS7XxjTF6YQOypc2GEQgjux2lc3Qr....."/>
+          <SearchSegmentsHotels>
+            <SearchSegmentHotels Start="2020-12-20" End="2020-12-25"/>
+            <HotelCodes>
+              <HotelCode>JP046300</HotelCode>
+            </HotelCodes>
+          </SearchSegmentsHotels>
+        </HotelCheckAvailRequest>
+      </HotelCheckAvailRQ>
+    </HotelCheckAvail>
+  </soapenv:Body>
+</soapenv:Envelope>

@@ -1,0 +1,11 @@
+<soapenv:Envelope xmlns:soapenv = "http://schemas.xmlsoap.org/soap/envelope/" xmlns = "http://www.juniper.es/webservice/2007/">
+    <soapenv:Header/>
+    <soapenv:Body>
+        <CancelBooking>
+            <CancelRQ Version = "1.1" Language = "en">
+                <Login Email = "user@mydomain.com" Password = "pass"/>
+                <CancelRequest ReservationLocator = "WZS1N6" OnlyCancellationFees = "true"/>
+            </CancelRQ>
+        </CancelBooking>
+    </soapenv:Body>
+</soapenv:Envelope>

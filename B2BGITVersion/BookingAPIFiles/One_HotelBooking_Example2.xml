@@ -1,0 +1,70 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:env="http://www.w3.org/2003/05/soap-envelope" xmlns="http://www.juniper.es/webservice/2007/">
+  <soapenv:Body>
+    <HotelBooking>
+      <HotelBookingRQ Version="1.1" Language="en">
+        <Login Email="user@mydomain.com" Password="pass"/>
+        <Paxes>
+          <Pax IdPax="1">
+            <Name>Holder Name</Name>
+            <Surname>Holder Surname</Surname>
+            <PhoneNumbers>
+              <PhoneNumber>+34600555999</PhoneNumber>
+            </PhoneNumbers>
+            <Email>holder@yourdomain.com</Email>
+            <Document Type="DNI">43258752A</Document>
+            <Address>Address Holder 67</Address>
+            <City>Palma de Mallorca</City>
+            <Country>Spain</Country>
+            <PostalCode>05278</PostalCode>
+            <Age>50</Age>
+            <Nationality>ES</Nationality>
+          </Pax>
+          <Pax IdPax="2">
+            <Name>Second Passenger Name</Name>
+            <Surname>Second Passenger Surname</Surname>
+            <Age>30</Age>
+          </Pax>
+          <Pax IdPax="3">
+            <Name>Child Name</Name>
+            <Surname>Child Surname</Surname>
+            <Age>8</Age>
+          </Pax>
+        </Paxes>
+        <Holder>
+          <RelPax IdPax="1"/>
+        </Holder>
+        <ExternalBookingReference>YOUR_OWN_REFERENCE_123</ExternalBookingReference>
+        <Comments>
+          <Comment Type="RES">GENERAL BOOKING COMMENTS</Comment>
+        </Comments>
+        <Elements>
+          <HotelElement>
+            <BookingCode>ya79dM4dS6R6EywV4XhfEvwItLN5sfa4xcKoRWYtG4b/utM1C8FoU7wtvxeqXKhz2utopk4+5bpJX0EGM8YWSGAwgLA0lkvt/PLN1rsHUrCU.....</BookingCode>
+            <RelPaxesDist>
+              <RelPaxDist>
+                <RelPaxes>
+                  <RelPax IdPax="1"/>
+                </RelPaxes>
+              </RelPaxDist>
+              <RelPaxDist>
+                <RelPaxes>
+                  <RelPax IdPax="2"/>
+                  <RelPax IdPax="3"/>
+                </RelPaxes>
+              </RelPaxDist>
+            </RelPaxesDist>
+            <Comments>
+              <Comment Type="ELE">SPECIFIC HOTEL/SUPPLIER COMMENTS</Comment>
+            </Comments>
+            <HotelBookingInfo Start="2019-11-20" End="2019-11-22">
+              <Price>
+                <PriceRange Minimum="0" Maximum="1003.57" Currency="EUR"/>
+              </Price>
+              <HotelCode>JP046300</HotelCode>
+            </HotelBookingInfo>
+          </HotelElement>
+        </Elements>
+      </HotelBookingRQ>
+    </HotelBooking>
+  </soapenv:Body>
+</soapenv:Envelope>

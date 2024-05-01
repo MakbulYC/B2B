@@ -1,0 +1,19 @@
+<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns="http://www.juniper.es/webservice/2007/">
+  <soap:Header/>
+  <soap:Body>
+    <HotelBookingRules>
+      <HotelBookingRulesRQ Version="1.1" Language="en">
+        <Login Email="user@mydomain.com" Password="pass"/>
+        <HotelBookingRulesRequest>
+          <HotelOption RatePlanCode="ya79dM4dS6R6EywV4XhfEvwItLN5sfa4xcKoRWYtG4b/utM1C8FoU7wtvxeqXKhz2utopk4+5bpJX0EGM8YWSGAwgLA0lkvt/PL....."/>
+          <SearchSegmentsHotels>
+            <SearchSegmentHotels Start="2019-11-20" End="2019-11-22"/>
+            <HotelCodes>
+              <HotelCode>JP046300</HotelCode>
+            </HotelCodes>
+          </SearchSegmentsHotels>
+        </HotelBookingRulesRequest>
+      </HotelBookingRulesRQ>
+    </HotelBookingRules>
+  </soap:Body>
+</soap:Envelope>

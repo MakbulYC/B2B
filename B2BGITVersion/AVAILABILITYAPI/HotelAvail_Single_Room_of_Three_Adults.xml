@@ -1,0 +1,46 @@
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns="http://www.juniper.es/webservice/2007/">
+  <soapenv:Header/>
+  <soapenv:Body>
+    <HotelAvail>
+      <HotelAvailRQ Version="1.1" Language="en">
+        <Login Email="user@mydomain.com" Password="pass"/>
+        <Paxes>
+          <Pax IdPax="1"/>
+          <Pax IdPax="2"/>
+          <Pax IdPax="3">
+            <Age>8</Age>
+          </Pax>
+        </Paxes>
+        <HotelRequest>
+          <SearchSegmentsHotels>
+            <SearchSegmentHotels Start="2019-11-20" End="2019-11-22"/>
+            <CountryOfResidence>ES</CountryOfResidence>
+            <HotelCodes>
+              <HotelCode>JP046300</HotelCode>
+              <HotelCode>JP150074</HotelCode>
+              <HotelCode>JP046391</HotelCode>
+            </HotelCodes>
+          </SearchSegmentsHotels>
+          <RelPaxesDist>
+            <RelPaxDist>
+              <RelPaxes>
+                <RelPax IdPax="1"/>
+              </RelPaxes>
+            </RelPaxDist>
+            <RelPaxDist>
+              <RelPaxes>
+                <RelPax IdPax="2"/>
+                <RelPax IdPax="3"/>
+              </RelPaxes>
+            </RelPaxDist>
+          </RelPaxesDist>
+        </HotelRequest>
+        <AdvancedOptions>
+          <ShowHotelInfo>false</ShowHotelInfo>
+          <ShowOnlyBestPriceCombination>true</ShowOnlyBestPriceCombination>
+          <TimeOut>8000</TimeOut>
+        </AdvancedOptions>
+      </HotelAvailRQ>
+    </HotelAvail>
+  </soapenv:Body>
+</soapenv:Envelope>
